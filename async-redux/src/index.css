@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+#particles-js {
+  background: url('./assets/background.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}

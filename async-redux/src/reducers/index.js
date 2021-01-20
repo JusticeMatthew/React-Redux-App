@@ -8,7 +8,7 @@ const initialState = {
   pokemon: {
     id: '',
     name: '',
-    abilities: '',
+    abilities: [],
   },
   isGetting: false,
   error: '',
@@ -19,7 +19,13 @@ export const reducer = (state = initialState, action) => {
     case GET_POKEMON_START:
       return {
         ...state,
+        pokemon: {
+          id: '',
+          name: '',
+          abilities: [],
+        },
         isGetting: true,
+        error: '',
       };
     case GET_POKEMON_SUCCESS:
       return {
